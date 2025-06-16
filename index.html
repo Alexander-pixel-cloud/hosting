@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Script by MartinDev</title>
+  <style>
+    /* Partikel Background */
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    /* Konten Utama */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background-color: #000;
+      overflow: hidden;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #00f7ff, #00aaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    .script-list {
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .script-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .script-list li {
+      margin: 10px 0;
+      font-size: 1.1em;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .script-list li::before {
+      content: "🧑‍💻";
+      position: absolute;
+      left: 0;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Partikel Background -->
+  <div id="particles-js"></div>
+
+  <!-- Konten -->
+  <div class="container">
+    <h1>Script by FritenDev</h1>
+    <p>Kumpulan script unggulan buatan FritenDev</p>
+
+    <div class="script-list">
+      <ul>
+        <li>  -Script Web Top Up Game (Frontend Only)</li>
+        <li>  -Script cPanel Buatan Sendiri (HTML + Statistik Dummy)</li>
+      </ul>
+    </div>
+
+    <footer>© 2025 FritenDev | Hub 081916807680 untuk buy script</footer>
+  </div>
+
+  <!-- Script CDN Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- Konfigurasi Partikel -->
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 90,
+          "density": { "enable": true, "value_area": 800 }
+        },
+        "color": { "value": ["#00f7ff", "#00aaff", "#00c3ff"] },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5, "random": true },
+        "size": { "value": 3, "random": true },
+        "line_linked": {
+          "enable": true,
+          "distance": 130,
+          "color": "#00ffff",
+          "opacity": 0.3,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1.5,
+          "direction": "none",
+          "out_mode": "out"
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+          "repulse": { "distance": 100 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+
+</body>
+</html>
